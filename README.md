@@ -14,6 +14,6 @@ A vanilla javascript app that randomly partners people together for pair program
 
 ## Getting Started
 Using your web browser of choice, navigate to the /src folder and open the /index.html file.<br>
-Alternatively, <a href="https://paulmeier.com.au/assets/projects/pair-programmer/index.html" target="_blank">click this link</a> to open the app in a new tab with your default browser.
+Alternatively, <a href="https://pairprogrammer.paulmeier.com.au/" target="_blank">click this link</a> to open the app in a new tab with your default browser.
 
 
