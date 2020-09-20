@@ -3,7 +3,7 @@ A vanilla javascript app that randomly partners people together for pair program
 
 
 ## Contributors
-|[![Syeda Ismat Farjana](/assets/syeda-ismat-farjana-150px.jpg)](https://github.com/ismatfarjana/) | [![Paul Meier](/assets/paul-meier-150px.jpg)](https://paulmeier.com.au/) |
+|[![Syeda Ismat Farjana](/assets/syeda-ismat-farjana-150px.jpg)](https://www.linkedin.com/in/syeda-ismat-farjana/) | [![Paul Meier](/assets/paul-meier-150px.jpg)](https://paulmeier.com.au/) |
 |-----------|-----------|
 | Syeda Ismat Farjana | Paul Anthony Meier |
 
