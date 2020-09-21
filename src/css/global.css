@@ -174,18 +174,18 @@ body {
   margin-left: 20px;
   text-transform: capitalize;
 }
-.settings-staff-trainers-photo-edit-btn:active,
-.settings-staff-trainers-photo-edit-btn:focus,
-.settings-staff-trainers-photo-edit-btn:hover,
+.student-photo-edit-btn:active,
+.student-photo-edit-btn:focus,
+.student-photo-edit-btn:hover,
 .content-edit-btn:active,
 .content-edit-btn:focus,
 .content-edit-btn:hover {
   color: rgb(51, 114, 181);
   text-decoration: underline;
 }
-.settings-staff-trainers-photo-edit-btn:active .fas.fa-edit,
-.settings-staff-trainers-photo-edit-btn:focus .fas.fa-edit,
-.settings-staff-trainers-photo-edit-btn:hover .fas.fa-edit,
+.student-photo-edit-btn:active .fas.fa-edit,
+.student-photo-edit-btn:focus .fas.fa-edit,
+.student-photo-edit-btn:hover .fas.fa-edit,
 .content-edit-btn:active .fas.fa-eye,
 .content-edit-btn:focus .fas.fa-eye,
 .content-edit-btn:hover .fas.fa-eye,
@@ -310,7 +310,7 @@ body {
   padding: 0px;
   width: 100%;
 }
-.content-section-card-staff {
+.content-section-card-student {
   align-items: flex-start;
   background-color: rgb(252, 252, 252);
   border: solid 1px rgb(240, 240, 240);
@@ -323,10 +323,10 @@ body {
   padding: 10px;
   width: calc(50% - 5px);
 }
-.content-section-card-staff:nth-of-type(even) {
+.content-section-card-student:nth-of-type(even) {
   margin-right: 0px;
 }
-.section-card-staff-right {
+.section-card-student-right {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -335,7 +335,7 @@ body {
   width: 100%;
 }
 
-.settings-staff-trainers {
+.student-page-image {
   border-radius: 2px;
   height: 100px;
   width: 100px;
@@ -345,7 +345,7 @@ body {
   font-size: 40px;
 }
 
-.settings-staff-trainers-photo-edit-btn {
+.student-photo-edit-btn {
   color: rgb(66, 139, 202);
   display: block;
   font-size: 0.9em;
@@ -363,7 +363,7 @@ body {
     padding: 0px;
     width: 100%;
   }
-  .content-section-card-staff {
+  .content-section-card-student {
     align-items: flex-start;
     background-color: rgb(252, 252, 252);
     border: solid 1px rgb(240, 240, 240);
@@ -431,7 +431,7 @@ body {
     min-width: 100%;
     text-transform: capitalize;
   }
-  .content-section-card-staff {
+  .content-section-card-student {
     align-items: flex-start;
     display: flex;
     flex-direction: row;
