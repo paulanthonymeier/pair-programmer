@@ -140,12 +140,12 @@
 				<div class="content-section-header"><h3>create new student</h3></div>
 				<div class="content-section-columns">
 					<div class="content-section-left">
-						<form action="" method="post" class="">
+						<form action="" method="post" id="" class="student-create" autocomplete="off">
 							<!-- Content: New Row -->
 							<div class="content-section-row">
 								<div class="content-section-row-label">first name</div>
 								<div id="" class="content-section-row-field">
-									<input type="text" name="firstName" id="" class="student-create">
+									<input type="text" name="firstName" id="" class="student-create" placeholder="First Name" required>
 								</div>
 							</div>
 							<!-- Content End -->
@@ -153,7 +153,7 @@
 							<div class="content-section-row">
 								<div class="content-section-row-label">last name</div>
 								<div id="" class="content-section-row-field">
-									<input type="text" name="lastName" id="" class="student-create">
+									<input type="text" name="lastName" id="" class="student-create" placeholder="Last Name" required>
 								</div>
 							</div>
 							<!-- Row End -->
@@ -161,7 +161,7 @@
 							<div class="content-section-row content-section-row-card">
 								<div class="content-section-row-label content-section-row-label-card">username</div>
 								<div id="content-section-row-field-downcase" class="content-section-row-field content-section-row-field-card">
-									<input type="text" name="username" id="" class="student-create">
+									<input type="text" name="username" id="" class="student-create" placeholder="Username" required>
 								</div>
 							</div>
 							<!-- Row End -->
@@ -169,7 +169,7 @@
 							<div class="content-section-row content-section-row-card">
 								<div class="content-section-row-label content-section-row-label-card">email address</div>
 								<div id="content-section-row-field-downcase" class="content-section-row-field content-section-row-field-card">
-									<input type="email" name="email" id="" class="student-create">
+									<input type="email" name="email" id="" class="student-create" placeholder="Email Address" required>
 								</div>
 							</div>
 							<!-- Row End -->
@@ -177,7 +177,7 @@
 							<div class="content-section-row content-section-row-card">
 								<div class="content-section-row-label content-section-row-label-card">mobile/Cell number</div>
 								<div id="" class="content-section-row-field content-section-row-field-card">
-									<input type="text" name="contactNumber" id="" class="student-create">
+									<input type="text" name="contactNumber" id="" class="student-create" placeholder="Mobile/Cell Number" required>
 								</div>
 							</div>
 							<!-- Row End -->
@@ -185,7 +185,11 @@
 							<div class="content-section-row content-section-row-card">
 								<div class="content-section-row-label content-section-row-label-card">gender</div>
 								<div id="" class="content-section-row-field content-section-row-field-card">
-									<input type="text" name="contactNumber" id="" class="student-create">
+									<select name="gender" id="student-create-gender" class="student-create" required>
+										<option value="">-- Select --</option>
+										<option value="female">Female</option>
+										<option value="male">Male</option>
+									</select>
 								</div>
 							</div>
 							<!-- Row End -->
@@ -193,15 +197,15 @@
 							<div class="content-section-row">
 								<div class="content-section-row-label">date of birth</div>
 								<div id="" class="content-section-row-field">
-									<input type="date" name="dob" id="" class="student-create">
+									<input type="date" name="dob" id="student-create-dob" class="student-create" required>
 								</div>
 							</div>
 							<!-- Row End -->
 							<!-- Content: New Row -->
 							<div class="content-section-row">
-								<div class="content-section-row-label">age</div>
+								<div class="content-section-row-label"></div>
 								<div id="" class="content-section-row-field">
-									{calculate age}
+									<button type="submit" value="Submit" class="button button-blue">Add Student</button>
 								</div>
 							</div>
 							<!-- Row End -->
