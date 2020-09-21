@@ -30,7 +30,8 @@ h3 {
 .button-blue {
   background-color: rgb(66, 139, 202);
   border-color: rgb(66, 139, 202);
-  color: rgb(255, 255, 255)
+  color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 .button-blue:active,
 .button-blue:focus,
@@ -160,6 +161,9 @@ body {
 #content-section-row-field-upcase {
   text-transform: uppercase;
 }
+input.student-create {
+  border: 1px solid #fd0000;
+}
 .fas.fa-eye,
 .fas.fa-edit {
   color: rgb(66, 139, 202);
@@ -280,6 +284,7 @@ body {
 .fas.fa-plus-square,
 .fas.fa-trash-alt {
   color: rgb(165, 165, 165);
+  cursor: pointer;
   font-size: 18px;
   margin-left: 10px;
 }
