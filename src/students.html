@@ -139,7 +139,7 @@
 				<div class="content-section-header"><h3>create new student</h3></div>
 				<div class="content-section-columns">
 					<div class="content-section-left">
-						<form action="" method="post" id="" class="student-create" autocomplete="off">
+						<form action="" method="post" id="create-student-form" class="student-create" autocomplete="off">
 							<!-- Content: New Row -->
 							<div class="content-section-row">
 								<div class="content-section-row-label">first name</div>
@@ -168,7 +168,7 @@
 							<div class="content-section-row">
 								<div class="content-section-row-label"></div>
 								<div id="" class="content-section-row-field">
-									<button type="submit" value="Submit" class="button button-blue">Add Student</button>
+									<button type="submit" value="Submit" id="btn-create-student" class="button button-blue">Add Student</button>
 								</div>
 							</div>
 							<!-- Row End -->
@@ -201,127 +201,11 @@
 			<!-- Content: New Section -->
 			<div class="content-section">
 				<div class="content-section-header"><h3>students</h3></div>
-				<div class="content-section-columns-cards">
-					<!-- Content: Student Card -->
-					<div class="content-section-card-student">
-						<!-- Content: User Profile Picture -->
-						<div class="content-section-profile">
-							<div class="content-section-profile-image student-page-image">
-								<div id="" class="content-section-profile-image-pic">
-									<img src="./assets/profile-picture-paul.jpg" alt="Paul Meier" width="100%" height="100%">
-								</div>
-							</div>
-							<div class="content-section-profile-icons">
-								<a id="" class="student-photo-edit-btn" href="#"><i class="fas fa-edit"></i>edit</a>
-							</div>
-						</div>
-						<!-- Content End -->
-						<div class="section-card-student-right">
-						<!-- Content: New Row -->
-						<div class="content-section-row content-section-row-card">
-							<div class="content-section-row-label content-section-row-label-card">name</div>
-							<div id="" class="content-section-row-field content-section-row-field-card">paul meier</div>
-						</div>
-						<!-- Content End -->
-						<!-- Content: New Row -->
-						<div class="content-section-row content-section-row-card">
-							<div class="content-section-row-label content-section-row-label-card">email address</div>
-							<div id="content-section-row-field-downcase" class="content-section-row-field content-section-row-field-card">paul@paulmeier.com.au</div>
-						</div>
-						<!-- Row End -->
-						</div>
+				<div id="student-cards" class="content-section-columns-cards">
+					<!-- Student Cards Render Here-->
+					<div id="no-students" class="content-section-no-students">
+						<span class="no-students"><i class="fas fa-exclamation-triangle"></i> Please add students to the database!</span>
 					</div>
-					<!-- Content End: Student Card -->
-					<!-- Content: Student Card -->
-					<div class="content-section-card-student">
-							<!-- Content: User Profile Picture -->
-							<div class="content-section-profile">
-								<div class="content-section-profile-image student-page-image">
-									<div id="" class="content-section-profile-image-pic">
-										<img src="./assets/profile-picture-michelle.jpg" alt="Michelle Lewin" width="100%" height="100%">
-									</div>
-								</div>
-								<div class="content-section-profile-icons">
-									<a id="" class="student-photo-edit-btn" href="#"><i class="fas fa-edit"></i>edit</a>
-								</div>
-							</div>
-							<!-- Content End -->
-							<div class="section-card-student-right">
-								<!-- Content: New Row -->
-								<div class="content-section-row content-section-row-card">
-									<div class="content-section-row-label content-section-row-label-card">name</div>
-									<div id="" class="content-section-row-field content-section-row-field-card">michelle lewin</div>
-								</div>
-								<!-- Content End -->
-								<!-- Content: New Row -->
-								<div class="content-section-row content-section-row-card">
-									<div class="content-section-row-label content-section-row-label-card">email address</div>
-									<div id="content-section-row-field-downcase" class="content-section-row-field content-section-row-field-card">michelle@michellelewin.com</div>
-								</div>
-								<!-- Row End -->
-							</div>
-					</div>
-					<!-- Content End: Student Card -->
-					<!-- Content: Student Card -->
-					<div class="content-section-card-student">
-						<!-- Content: User Profile Picture -->
-						<div class="content-section-profile">
-							<div class="content-section-profile-image student-page-image">
-								<div id="" class="content-section-profile-image-pic">
-									<img src="./assets/profile-picture-david.jpg" alt="David Coyne" width="100%" height="100%">
-								</div>
-							</div>
-							<div class="content-section-profile-icons">
-								<a id="" class="student-photo-edit-btn" href="#"><i class="fas fa-edit"></i>edit</a>
-							</div>
-						</div>
-						<!-- Content End -->
-						<div class="section-card-student-right">
-							<!-- Content: New Row -->
-							<div class="content-section-row content-section-row-card">
-								<div class="content-section-row-label content-section-row-label-card">name</div>
-								<div id="" class="content-section-row-field content-section-row-field-card">david coyne</div>
-							</div>
-							<!-- Content End -->
-							<!-- Content: New Row -->
-							<div class="content-section-row content-section-row-card">
-								<div class="content-section-row-label content-section-row-label-card">email address</div>
-								<div id="content-section-row-field-downcase" class="content-section-row-field content-section-row-field-card">david@coyne.com</div>
-							</div>
-							<!-- Row End -->
-						</div>
-					</div>
-					<!-- Content End: Student Card -->
-					<!-- Content: Student Card -->
-					<div class="content-section-card-student">
-						<!-- Content: User Profile Picture -->
-						<div class="content-section-profile">
-							<div class="content-section-profile-image student-page-image">
-								<div id="" class="content-section-profile-image-pic">
-									<img src="./assets/profile-picture-lawrence.jpg" alt="Lawrence Templar" width="100%" height="100%">
-								</div>
-							</div>
-							<div class="content-section-profile-icons">
-								<a id="" class="student-photo-edit-btn" href="#"><i class="fas fa-edit"></i>edit</a>
-							</div>
-						</div>
-						<!-- Content End -->
-						<div class="section-card-student-right">
-							<!-- Content: New Row -->
-							<div class="content-section-row content-section-row-card">
-								<div class="content-section-row-label content-section-row-label-card">name</div>
-								<div id="" class="content-section-row-field content-section-row-field-card">lawrence templar</div>
-							</div>
-							<!-- Content End -->
-							<!-- Content: New Row -->
-							<div class="content-section-row content-section-row-card">
-								<div class="content-section-row-label content-section-row-label-card">email address</div>
-								<div id="content-section-row-field-downcase" class="content-section-row-field content-section-row-field-card">lawrence@lawrencetemplar.com</div>
-							</div>
-							<!-- Row End -->
-						</div>
-					</div>
-					<!-- Content End: Student Card -->
 				</div>
 				</div>
 				<!-- Section End -->

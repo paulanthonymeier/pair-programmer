@@ -122,6 +122,17 @@ form.student-create {
   padding: 10px 10px 0px 10px;
   width: 100%;
 }
+.content-section-no-students {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 10px 0px 10px;
+  width: 100%;
+}
+span.no-students {
+  color: #ccc;
+}
 .content-section-left {
   align-items: flex-start;
   display: flex;
@@ -228,7 +239,7 @@ input.student-create::placeholder {
 .content-edit-btn:active,
 .content-edit-btn:focus,
 .content-edit-btn:hover {
-  color: rgb(51, 114, 181);
+  color: #d00000;
   text-decoration: underline;
 }
 .student-photo-edit-btn:active .fas.fa-edit,
@@ -372,7 +383,7 @@ input.student-create::placeholder {
   padding: 10px;
   width: calc(50% - 5px);
 }
-.content-section-card-student:nth-of-type(even) {
+.content-section-card-student:nth-of-type(odd) {
   margin-right: 0px;
 }
 .section-card-student-right {
