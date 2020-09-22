@@ -1,6 +1,7 @@
 const createStudentForm = document.getElementById('create-student-form');
 const userInputs = createStudentForm.querySelectorAll('input');
 const btnCreateNewStudent = createStudentForm.querySelector('#btn-create-student');
+const btnGeneratePairs = document.getElementById('generate-pairs');
 const btnDeleteStudent = document.getElementById('delete-student');
 const noStudentsText = document.getElementById('no-students');
 
@@ -80,5 +81,9 @@ const addStudentHandler = () => {
   updateUI();
 };
 
-btnCreateNewStudent.addEventListener('click', addStudentHandler);
+const randomPairsHandler = () => {
+  // pairing logic
+};
 
+btnCreateNewStudent.addEventListener('click', addStudentHandler);
+btnGeneratePairs.addEventListener('click', randomPairsHandler);
