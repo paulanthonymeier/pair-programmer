@@ -23,7 +23,7 @@
 <!-- Scripts
 ================================================== -->
 <script src="./students.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
 
 </head>
 
@@ -128,14 +128,76 @@
 		<div class="container-side-nav-bar">
 			<div class="side-nav-bar-left">
 				<a id="side-nav-current" class="side-nav-btn" href="./students.html">list all students</a>
-				<a id="" class="side-nav-btn" href="./students-create.html">create new student</a>
-				<!-- <a id="" class="side-nav-btn" href="#">other settings</a> -->
+				<!-- <a id="" class="side-nav-btn" href="./students-create.html">create new student</a> -->
 			</div>	
 		</div>
 
 		<!-- Sect: Page Content
 		================================================== -->	
 		<div class="container-content">
+			<div class="content-section">
+				<div class="content-section-header"><h3>create new student</h3></div>
+				<div class="content-section-columns">
+					<div class="content-section-left">
+						<form action="" method="post" id="" class="student-create" autocomplete="off">
+							<!-- Content: New Row -->
+							<div class="content-section-row">
+								<div class="content-section-row-label">first name</div>
+								<div id="" class="content-section-row-field">
+									<input type="text" name="firstName" id="" class="student-create" placeholder="First Name" required>
+								</div>
+							</div>
+							<!-- Content End -->
+							<!-- Content: New Row -->
+							<div class="content-section-row">
+								<div class="content-section-row-label">last name</div>
+								<div id="" class="content-section-row-field">
+									<input type="text" name="lastName" id="" class="student-create" placeholder="Last Name" required>
+								</div>
+							</div>
+							<!-- Row End -->
+							<!-- Content: New Row -->
+							<div class="content-section-row content-section-row-card">
+								<div class="content-section-row-label content-section-row-label-card">email address</div>
+								<div id="content-section-row-field-downcase" class="content-section-row-field content-section-row-field-card">
+									<input type="email" name="email" id="" class="student-create" placeholder="Email Address" required>
+								</div>
+							</div>
+							<!-- Row End -->
+							<!-- Content: New Row -->
+							<div class="content-section-row">
+								<div class="content-section-row-label"></div>
+								<div id="" class="content-section-row-field">
+									<button type="submit" value="Submit" class="button button-blue">Add Student</button>
+								</div>
+							</div>
+							<!-- Row End -->
+						</form>
+					</div>
+					<div class="content-section-right">
+						<!-- Content: New Row -->
+						<div class="content-section-profile">
+							<div class="content-section-profile-image">
+								<div class="content-section-profile-image-pic">
+									<i class="fas fa-camera"></i>
+									<div class="content-section-profile-text">student id photo</div>
+								</div>
+							</div>
+							<div class="content-section-profile-icons">
+								<div>
+									<i title="Please upload your student id photo that clearly shows your face." class="fas fa-info-circle"></i>
+								</div>
+								<div>
+									<i class="fas fa-plus-square"></i>
+									<i class="fas fa-trash-alt"></i>
+								</div>
+							</div>
+						</div>
+						<!-- Row End -->
+					</div>
+				</div>
+			</div>
+			<!-- Section End -->
 			<!-- Content: New Section -->
 			<div class="content-section">
 				<div class="content-section-header"><h3>students</h3></div>
@@ -163,26 +225,8 @@
 						<!-- Content End -->
 						<!-- Content: New Row -->
 						<div class="content-section-row content-section-row-card">
-							<div class="content-section-row-label content-section-row-label-card">username</div>
-							<div id="content-section-row-field-downcase" class="content-section-row-field content-section-row-field-card">paulmeier</div>
-						</div>
-						<!-- Row End -->
-						<!-- Content: New Row -->
-						<div class="content-section-row content-section-row-card">
 							<div class="content-section-row-label content-section-row-label-card">email address</div>
 							<div id="content-section-row-field-downcase" class="content-section-row-field content-section-row-field-card">paul@paulmeier.com.au</div>
-						</div>
-						<!-- Row End -->
-						<!-- Content: New Row -->
-						<div class="content-section-row content-section-row-card">
-							<div class="content-section-row-label content-section-row-label-card">mobile/Cell number</div>
-							<div id="" class="content-section-row-field content-section-row-field-card">+61 0422 050 590</div>
-						</div>
-						<!-- Row End -->
-						<!-- Content: New Row -->
-						<div class="content-section-row content-section-row-card">
-							<div class="content-section-row-label content-section-row-label-card">status</div>
-							<div id="" class="content-section-row-field content-section-row-field-card">active</div>
 						</div>
 						<!-- Row End -->
 						</div>
@@ -211,26 +255,8 @@
 								<!-- Content End -->
 								<!-- Content: New Row -->
 								<div class="content-section-row content-section-row-card">
-									<div class="content-section-row-label content-section-row-label-card">username</div>
-									<div id="content-section-row-field-downcase" class="content-section-row-field content-section-row-field-card">michellelewin</div>
-								</div>
-								<!-- Row End -->
-								<!-- Content: New Row -->
-								<div class="content-section-row content-section-row-card">
 									<div class="content-section-row-label content-section-row-label-card">email address</div>
 									<div id="content-section-row-field-downcase" class="content-section-row-field content-section-row-field-card">michelle@michellelewin.com</div>
-								</div>
-								<!-- Row End -->
-								<!-- Content: New Row -->
-								<div class="content-section-row content-section-row-card">
-									<div class="content-section-row-label content-section-row-label-card">mobile/Cell number</div>
-									<div id="" class="content-section-row-field content-section-row-field-card">+61 0400 123 456</div>
-								</div>
-								<!-- Row End -->
-								<!-- Content: New Row -->
-								<div class="content-section-row content-section-row-card">
-									<div class="content-section-row-label content-section-row-label-card">status</div>
-									<div id="" class="content-section-row-field content-section-row-field-card">active</div>
 								</div>
 								<!-- Row End -->
 							</div>
@@ -259,26 +285,8 @@
 							<!-- Content End -->
 							<!-- Content: New Row -->
 							<div class="content-section-row content-section-row-card">
-								<div class="content-section-row-label content-section-row-label-card">username</div>
-								<div id="content-section-row-field-downcase" class="content-section-row-field content-section-row-field-card">davidcoyne</div>
-							</div>
-							<!-- Row End -->
-							<!-- Content: New Row -->
-							<div class="content-section-row content-section-row-card">
 								<div class="content-section-row-label content-section-row-label-card">email address</div>
 								<div id="content-section-row-field-downcase" class="content-section-row-field content-section-row-field-card">david@coyne.com</div>
-							</div>
-							<!-- Row End -->
-							<!-- Content: New Row -->
-							<div class="content-section-row content-section-row-card">
-								<div class="content-section-row-label content-section-row-label-card">mobile/Cell number</div>
-								<div id="" class="content-section-row-field content-section-row-field-card">+61 0400 123 456</div>
-							</div>
-							<!-- Row End -->
-							<!-- Content: New Row -->
-							<div class="content-section-row content-section-row-card">
-								<div class="content-section-row-label content-section-row-label-card">status</div>
-								<div id="" class="content-section-row-field content-section-row-field-card">active</div>
 							</div>
 							<!-- Row End -->
 						</div>
@@ -307,26 +315,8 @@
 							<!-- Content End -->
 							<!-- Content: New Row -->
 							<div class="content-section-row content-section-row-card">
-								<div class="content-section-row-label content-section-row-label-card">username</div>
-								<div id="content-section-row-field-downcase" class="content-section-row-field content-section-row-field-card">lawrencetemplar</div>
-							</div>
-							<!-- Row End -->
-							<!-- Content: New Row -->
-							<div class="content-section-row content-section-row-card">
 								<div class="content-section-row-label content-section-row-label-card">email address</div>
 								<div id="content-section-row-field-downcase" class="content-section-row-field content-section-row-field-card">lawrence@lawrencetemplar.com</div>
-							</div>
-							<!-- Row End -->
-							<!-- Content: New Row -->
-							<div class="content-section-row content-section-row-card">
-								<div class="content-section-row-label content-section-row-label-card">mobile/Cell number</div>
-								<div id="" class="content-section-row-field content-section-row-field-card">+61 0400 123 456</div>
-							</div>
-							<!-- Row End -->
-							<!-- Content: New Row -->
-							<div class="content-section-row content-section-row-card">
-								<div class="content-section-row-label content-section-row-label-card">status</div>
-								<div id="" class="content-section-row-field content-section-row-field-card">active</div>
 							</div>
 							<!-- Row End -->
 						</div>
@@ -335,6 +325,13 @@
 				</div>
 				</div>
 				<!-- Section End -->
+				<!-- Content: New Section -->
+			<div class="content-section">
+				<div class="content-section-header"><h3>generate random pairs</h3><button class="button button-blue">Generate Pairs</button></div>
+				<div class="content-section-columns">
+				</div>
+			</div>
+			<!-- Section End -->
 			</div>
 		</div>
 	</div>
