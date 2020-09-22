@@ -43,6 +43,9 @@
   background-color: rgba(255, 255, 255, 0.06);
   color: #fff;
 }
+.container-sub-nav-mobile-left {
+  display: none;
+}
 
 @media screen and (max-width: 1080px) {
 }
@@ -50,6 +53,35 @@
 @media screen and (max-width: 768px) {
   .container-side-nav-bar {
     display: none;
+  }
+  .container-sub-nav-mobile-left {
+    background-color: rgb(57, 71, 87);
+    display: flex;
+    height: 100vh;
+    left: 0;
+    margin-right: 0px;
+    position: absolute;
+    top: 54px;
+    z-index: 10;
+  }
+  .mobile-xxxxx {
+    height: 38px;
+  }
+  .sub-nav-mobile-btn-left-close {
+    align-items: center;
+    background-color: rgb(46, 57, 71);
+    border-bottom: solid 2px rgb(255, 255, 255);
+    box-sizing: content-box;
+    color: rgb(204, 204, 204);
+    display: flex;
+    flex-direction: row;
+    font-weight: 300;
+    height: 100%;
+    justify-content: center;
+    margin-top: 2px;
+    padding: 0px;
+    text-transform: capitalize;
+    width: 100%;
   }
 }
 
