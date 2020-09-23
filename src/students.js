@@ -78,14 +78,12 @@ const addStudentHandler = () => {
     emailAddress: emailAddressValue
   };
   students.push(newStudent);
-  console.log(students);
   clearFormInputs();
   renderNewStudentCard(newStudent.id, newStudent.firstName, newStudent.lastName, newStudent.emailAddress);
   updateUI();
 };
 
 const randomPairsHandler = () => {
-  console.log(students);
   if (students.length % 2 != 0 || students.length === 0) {
     if (students.length === 0) {
       alert(
@@ -110,44 +108,90 @@ const randomPairsHandler = () => {
     }
   } 
   else {
-    var arr1 = students.firstName.slice(0, students.length / 2), // copy array
-    arr2 = students.firstName.slice(students.length / 2, students.length); // copy array again
-    console.log('ARRAY 1', arr1);
-    console.log('ARRAY 2', arr2);
+    var arr1 = students.slice(0, students.length / 2),
+    arr2 = students.slice(students.length / 2, students.length);
 
-    // arr1.sort(function() {
-    //   return 0.5 - Math.random();
-    // }); // shuffle arrays
-    // arr2.sort(function() {
-    //   return 0.5 - Math.random();
-    // });
+    arr1 = arr1.map((el) => {
+      let firstName = el.firstName
+      let lastName = el.lastName
+      return firstName, lastName
+    });
 
-    // // creating an empty array to save the pairs in it
-    // const pairs = [];
+    arr2 = arr2.map((el) => {
+      let firstName = el.firstName
+      let lastName = el.lastName
+      return firstName, lastName
+    });
 
-    // while (arr1.length) {
-    //   var name1 = arr1.pop(), // get the last value of arr1
-    //     name2 = arr2[0] == name1 ? arr2.pop() : arr2.shift();
-    //   //        ^^ if the first value is the same as name1,
-    //   //           get the last value, otherwise get the first
+    arr1.sort(function() {
+      return 0.5 - Math.random();
+    });
+    arr2.sort(function() {
+      return 0.5 - Math.random();
+    });
 
-    //   pairs.push(`${capitalize(name1)} gets ${capitalize(name2)}`); //  updating the pairs array with each pair by using push, here i am using a function capitalize to captalize each name, the function is at the bottom of this file
-    // }
+    const randomPairs = [];
 
-    // console.log(pairs);
+    while (arr1.length) {
+      var name1 = arr1.pop(),
+      name2 = arr2[0] == name1 ? arr2.pop() : arr2.shift();
+      randomPairs.push({'name1': name1, 'name2': name2});
+    }
 
-    // // creating a variable to catch the empty place in html using id-pairs
-    // const display = document.getElementById("pairs");
+    randomPairs.map(pair => {
+      let firstName1 = pair.name1
+      let firstName2 = pair.name2
 
-    // //  setting a variable to create an empty element in html, mapping the whole pairs array, and setting each pair as an inner text value of each element
-    // pairs.map(pair => {
-    //   const element = document.createElement("div");
-    //   element.innerText = pair;
-    //   // <div>pair</div>
-
-    //   // at last appendchild(element) is giving us every pair in the div of html by adding the pairs in display varable
-    //   display.appendChild(element);
-    // });
+      const newStudentMatch = document.createElement('div');
+      newStudentMatch.className = 'content-section-card-student-match';
+      newStudentMatch.id = 'content-section-card-student-match';
+      newStudentMatch.innerHTML = `
+      <div class="student-match-inner inner-left">
+        <div class="content-section-profile">
+          <div class="content-section-profile-image student-page-image-match">
+            <div id="" class="content-section-profile-image-pic">
+              <img src="./assets/profile-picture-none.jpg" alt="No Picture" width="100%" height="100%">
+            </div>
+          </div>
+        </div>
+        <div class="section-card-student-right">
+          <!-- Content: New Row -->
+          <div class="content-section-row content-section-row-card card-match">
+            <div id="" class="content-section-row-field content-section-row-field-card">${firstName1}</div>
+          </div>
+          <!-- Content End -->
+          <!-- Content: New Row -->
+          <div class="content-section-row content-section-row-card card-match">
+            <div id="" class="content-section-row-field content-section-row-field-card"></div>
+          </div>
+          <!-- Row End -->
+        </div>
+      </div>
+      <div class="student-match-inner inner-right">
+        <div class="content-section-profile">
+          <div class="content-section-profile-image student-page-image-match">
+            <div id="" class="content-section-profile-image-pic">
+              <img src="./assets/profile-picture-none.jpg" alt="No Picture" width="100%" height="100%">
+            </div>
+          </div>
+        </div>
+        <div class="section-card-student-right">
+          <!-- Content: New Row -->
+          <div class="content-section-row content-section-row-card card-match">
+            <div id="" class="content-section-row-field content-section-row-field-card">${firstName2}</div>
+          </div>
+          <!-- Content End -->
+          <!-- Content: New Row -->
+          <div class="content-section-row content-section-row-card card-match">
+            <div id="" class="content-section-row-field content-section-row-field-card"></div>
+          </div>
+          <!-- Row End -->
+        </div>
+      </div>
+      `;
+      const listRoot = document.getElementById('student-cards-match');
+      listRoot.append(newStudentMatch);
+    });
   }
 };
 
@@ -169,8 +213,6 @@ const closeLeftMobileNavMenuHandler = () => {
   const navContainer = document.getElementById('container-sub-nav-mobile-left-flyout');
   navContainer.style.display = 'none';
 };
-
-const rightMobileNavMenuHandler = () => {};
 
 btnCreateNewStudent.addEventListener('click', addStudentHandler);
 btnGeneratePairs.addEventListener('click', randomPairsHandler);
