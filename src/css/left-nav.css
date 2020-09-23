@@ -11,6 +11,9 @@
   position: fixed;
   left: 0;
 }
+.container-sub-nav-mobile-left-flyout {
+  display: none;
+}
 .side-nav-bar-left {
   align-items: flex-start;
   display: flex;
@@ -54,23 +57,42 @@
   .container-side-nav-bar {
     display: none;
   }
-  .container-sub-nav-mobile-left {
+  .container-sub-nav-mobile-left-flyout {
+    align-items: flex-start;
     background-color: rgb(57, 71, 87);
-    display: flex;
+    box-shadow: 8px 0px 10px 0 rgba(0, 0, 0, 0.65);
+    display: none;
+    flex-direction: column;
     height: 100vh;
+    justify-content: flex-start;
     left: 0;
     margin-right: 0px;
+    max-width: 250px;
+    min-width: 250px;
     position: absolute;
-    top: 54px;
+    top: 0;
     z-index: 10;
   }
-  .mobile-xxxxx {
-    height: 38px;
+  .sub-nav-mobile-btn-left-flyout-label {
+    display: flex;
+  }
+  .fas.fa-angle-double-left {
+    padding-left: 10px;
+  }
+  .sub-nav-mobile-left-flyout-header {
+    align-items: center;
+    background-color: rgb(46, 57, 71);
+    border-bottom: 2px solid #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 40px;
+    width: 100%;
   }
   .sub-nav-mobile-btn-left-close {
     align-items: center;
     background-color: rgb(46, 57, 71);
-    border-bottom: solid 2px rgb(255, 255, 255);
+    border-bottom: solid 2px #fff;
     box-sizing: content-box;
     color: rgb(204, 204, 204);
     display: flex;
@@ -81,10 +103,47 @@
     margin-top: 2px;
     padding: 0px;
     text-transform: capitalize;
-    width: 100%;
+    width: 86px;
   }
+  .sub-nav-mobile-btn-left-close:active,
+  .sub-nav-mobile-btn-left-close:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-bottom: solid 2px rgb(88, 183, 255);
+  color: rgb(255, 255, 255);
+}
 }
 
 @media screen and (max-width: 600px) {
 }
 
+.fade-in {
+  animation: fadeIn ease 0.4s;
+  -webkit-animation: fadeIn ease 0.4s;
+  -moz-animation: fadeIn ease 0.4s;
+  -o-animation: fadeIn ease 0.4s;
+  -ms-animation: fadeIn ease 0.4s;
+  }
+  @keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}

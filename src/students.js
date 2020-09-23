@@ -5,6 +5,9 @@ const btnGeneratePairs = document.getElementById('generate-pairs');
 const btnDeleteStudent = document.getElementById('delete-student');
 const noStudentsText = document.getElementById('no-students');
 
+const btnSubNavMobileLeftOpen = document.getElementById('sub-nav-mobile-btn-left-open');
+const btnSubNavMobileLeftClose = document.getElementById('sub-nav-mobile-btn-left-close');
+
 const students = [];
 
 const updateUI = () => {
@@ -157,7 +160,20 @@ const capitalize = (word) => {
   );
 };
 
-btnCreateNewStudent.addEventListener('click', addStudentHandler);
+const openLeftMobileNavMenuHandler = () => {
+  const navContainer = document.getElementById('container-sub-nav-mobile-left-flyout');
+  navContainer.style.display = 'flex';
+};
 
+const closeLeftMobileNavMenuHandler = () => {
+  const navContainer = document.getElementById('container-sub-nav-mobile-left-flyout');
+  navContainer.style.display = 'none';
+};
+
+const rightMobileNavMenuHandler = () => {};
+
+btnCreateNewStudent.addEventListener('click', addStudentHandler);
 btnGeneratePairs.addEventListener('click', randomPairsHandler);
+btnSubNavMobileLeftOpen.addEventListener('click', openLeftMobileNavMenuHandler);
+btnSubNavMobileLeftClose.addEventListener('click', closeLeftMobileNavMenuHandler);
 
