@@ -87,9 +87,7 @@ const randomPairsHandler = () => {
   if (students.length % 2 != 0 || students.length === 0) {
     if (students.length === 0) {
       alert(
-        `
-        Add some students first, FOOL!
-        `
+        `Add some students first, FOOL!`
       );
     } else if (students.length === 1) {
       alert(
